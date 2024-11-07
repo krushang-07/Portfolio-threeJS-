@@ -14,20 +14,26 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  // docker,
+  // meta,
+  // starbucks,
+  // tesla,
+  // shopify,
+  // carrent,
+  // jobit,
+  // tripguide,
+  // threejs,
 } from "../assets";
 
 import Ldrp from "../assets/company/Ldrp.png";
-
-
+import ssip from "../assets/company/ssip.jpeg";
+import prodigy from "../assets/company/prodigy.svg";
+import chat from "../assets/projectImg/chat.jpg";
+import movie from "../assets/projectImg/movie.jpg";
+import money from "../assets/projectImg/money.jpg";
+import crypto from "../assets/projectImg/crypto.jpg";
+import news from "../assets/projectImg/news.jpg";
+import all from "../assets/projectImg/all.jpg";
 
 export const navLinks = [
   {
@@ -37,6 +43,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "project",
+    title: "Project",
   },
   {
     id: "contact",
@@ -126,8 +136,8 @@ const experiences = [
   {
     title: "Student Startup and Innovation Policy(2023)",
     company_name: "Finalist",
-    // icon: tesla,
-    iconBg: "#E6DEDD",
+    icon: ssip,
+    iconBg: "#383E56",
     date: "Nov 2023 - dec 2023",
     points: [
       "Our team successfully completed the SSIP'23 Hackathon project under the guidance of Prof. Vishal Barot",
@@ -142,7 +152,7 @@ const experiences = [
   {
     title: "Web Developer",
     company_name: "Prodigy Infotech",
-    //icon: shopify,
+    icon: prodigy,
     iconBg: "#383E56",
     date: "Jun 2024 - Jul 2024",
     points: [
@@ -183,9 +193,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Chatter-Space",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Chatter-Space is a secure, real-time chat app built with the MERN stack, offering intuitive one-on-one and group messaging. It includes JWT-based authentication, instant notifications, and dynamic group management. With features like profile viewing, personalized photo uploads, and a robust user search, Chatter-Space creates a seamless",
     tags: [
       {
         name: "react",
@@ -196,38 +206,46 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "chakraUI",
         color: "pink-text-gradient",
       },
+      {
+        name: "socketio",
+        color: "white-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: chat,
+    source_code_link: "https://github.com/krushang-07/Chatter-Space",
   },
   {
-    name: "Job IT",
+    name: "Money-Mind",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Money Manager is a MERN-based tool with Chart.js that streamlines finances for individuals and small businesses. It offers secure transactions, real-time insights, and clear graphs for easy data visualization. Manage expenses effortlessly and make informed financial decisions with Money Manager",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "express",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "chartJS",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "black-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: money,
+    source_code_link: "https://github.com/krushang-07/money-mind",
   },
   {
-    name: "Trip Guide",
+    name: "CryptoApp",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "CryptoHub is a responsive platform built with ReactJS and Chakra-UI, providing real-time data on cryptocurrency exchanges, coins, and NFTs via the CoinGecko API. It features detailed insights, interactive graphs, search, pagination, and multi-currency support, delivering a seamless experience for crypto enthusiasts",
     tags: [
       {
         name: "nextjs",
@@ -242,71 +260,63 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: crypto,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Movie rating platform",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Built with Next.js and styled with Tailwind CSS, this app allows users to explore movies, view dynamic search results, and toggle light/dark modes. With server-side rendering for fast performance and optimized image handling, it delivers a smooth, responsive user experience.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "API",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: movie,
+    source_code_link: "https://github.com/krushang-07/IMDb",
   },
   {
-    name: "Trip Guide",
+    name: "News App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Built with Next.js and styled with Tailwind CSS, this app allows users to explore movies, view dynamic search results, and toggle light/dark modes. With server-side rendering for fast performance and optimized image handling, it delivers a smooth, responsive user experience.",
     tags: [
       {
-        name: "nextjs",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "API",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: news,
+    source_code_link: "https://github.com/krushang-07/News-world",
   },
   {
-    name: "Trip Guide",
+    name: "Mini projects",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "From text conversion tools and speech recognition to secure payment integrations and a full-stack to-do app, I’ve built a variety of projects featuring both frontend and backend elements. These applications showcase dynamic functionalities, real-time processing, and user-friendly interfaces, creating practical solutions for everyday tasks.",
     tags: [
       {
-        name: "nextjs",
+        name: "backend",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "frontend",
         color: "green-text-gradient",
       },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: all,
+    source_code_link: "https://github.com/krushang-07",
   },
 ];
 
