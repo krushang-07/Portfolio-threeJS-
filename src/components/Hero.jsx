@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+//import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto flex justify-center items-center">
       <div className="absolute inset-0 flex flex-col justify-center items-center gap-5">
-        <ComputersCanvas />
+        {/* <ComputersCanvas /> */}
 
         <div className="text-center">
           <h1 className={`${styles.heroHeadText} text-white`}>
