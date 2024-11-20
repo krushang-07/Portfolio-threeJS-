@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -13,16 +12,7 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  // docker,
-  // meta,
-  // starbucks,
-  // tesla,
-  // shopify,
-  // carrent,
-  // jobit,
-  // tripguide,
-  // threejs,
+  figma
 } from "../assets";
 
 import Ldrp from "../assets/company/Ldrp.png";
